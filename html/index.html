@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddy Tours and Traves</title>
+    <link rel="stylesheet" href="/css/index.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="#">REDDY TOURS</a>
+            </div>
+            <ul>
+                <li><a href="/HTML/index.html" class="active">Home</a></li>
+                <li><a href="/HTML/packages.html">Packages</a></li>
+                <li><a href="/HTML/services.html">Services</a></li>
+                <li><a href="/HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right-div">
+            <ul>
+                 <li><a href="/HTML/profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO REDDY TOURS & TRAVELS</p>
+            <h1>
+                Explore More.<br>
+                Travel Better.
+            </h1>
+            <p class="hero-text">
+                Comfortable, safe and affordable travel
+                for your next journey.
+            </p>
+            <div class="hero-buttons">
+                <a href="packages.html" class="btn primary-btn">Explore Packages</a>
+                <a href="booking.html" class="btn secondary-btn">Book Your Trip</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="search-section">
+    <h2>Where Do You Want To Go?</h2>
+
+    <div class="search-box">
+
+        <div class="input-group autocomplete">
+            <label>From</label>
+            <input type="text" id="fromInput" placeholder="Pune" autocomplete="off">
+            <div id="fromList" class="suggestion-list"></div>
+        </div>
+
+        <div class="input-group autocomplete">
+            <label>To</label>
+            <input type="text" id="toInput" placeholder="Goa" autocomplete="off">
+            <div id="toList" class="suggestion-list"></div>
+        </div>
+
+        <div class="input-group">
+            <label>Travel Date</label>
+            <input type="date" id="dateInput">
+        </div>
+
+        <button id="searchBtn">Search Trip</button>
+
+    </div>
+</section>
+
+    <section class="resultdisplay" id="resultDisplay"></section>
+
+
+
+    <!-- popular -->
+    <section class="popular-section">
+        <div class="section-heading">
+            <p>POPULAR ROUTES</p>
+            <h2>Travel From Pune To</h2>
+            <span>
+                Choose your destination and start your journey.
+            </span>
+        </div>
+        <div class="route-container">
+            <div class="route-card">
+                <div class="route-image">
+                    <img src="/images/mumbai.jpg" alt="Pune to Mumbai">
+                </div>
+                <div class="route-content">
+                    <h3>Pune → Mumbai</h3>
+                    <p>Comfortable travel with affordable pricing.</p>
+                    <a href="booking.html?tour=Pune-to-mumbai&price=2000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="route-card">
+                <div class="route-image">
+                    <img src="/images/nakshik.jpg" alt="Pune to Nashik">
+                </div>
+                <div class="route-content">
+                    <h3>Pune → Nashik</h3>
+                    <p>Plan your comfortable trip with us.</p>
+                    <a href="booking.html?tour=Pune-to-nakshik&price=3000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="route-card">
+                <div class="route-image">
+                    <img src="/images/goa.jpg" alt="Pune to Goa">
+                </div>
+                <div class="route-content">
+                    <h3>Pune → Goa</h3>
+                    <p>Enjoy a memorable journey to Goa.</p>
+                    <a href="booking.html?tour=Pune-to-goa&price=2000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="route-card">
+                <div class="route-image">
+                    <img src="/images/kolkata.jpg" alt="Pune to Kolkata">
+                </div>
+                <div class="route-content">
+                    <h3>Pune → Kolkata</h3>
+                    <p>Comfortable travel with affordable pricing.</p>
+                    <a href="booking.html?tour=Pune-to-kolkata&price=13000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="route-card">
+                <div class="route-image">
+                    <img src="/images/delhi.jpg" alt="Pune to Delhi">
+                </div>
+                <div class="route-content">
+                    <h3>Pune → Delhi</h3>
+                    <p>Comfortable travel with affordable pricing.</p>
+                    <a href="booking.html?tour=Pune-to-delhi&price=10000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="route-card">
+                <div class="route-image">
+                    <img src="/images/chennai.jpg" alt="Pune to Chnnai">
+                </div>
+                <div class="route-content">
+                    <h3>Pune → Chnnai</h3>
+                    <p>Comfortable travel with affordable pricing.</p>
+                    <a href="booking.html?tour=Pune-to-chennai&price=4000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="route-card">
+                <div class="route-image">
+                    <img src="/images/hyd.jpg" alt="Pune to Hyderabad">
+                </div>
+                <div class="route-content">
+                    <h3>Pune → Hyderabad</h3>
+                    <p>Safe and comfortable long-distance travel.</p>
+                    <a href="booking.html?tour=Pune-to-hydrabed&price=3000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="route-card">
+                <div class="route-image"><img src="/images/gujrat.jpg" alt="Pune to Gujrat"></div>
+                <div class="route-content">
+                    <h3>Pune → Gujrat</h3>
+                    <p>Safe and comfortable long-distance travel.</p>
+                    <a href="booking.html?tour=Pune-to-Gujrat&price=2000">Book Now <i
+                            class="fa-solid fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services-section">
+        <div class="section-heading">
+            <p>OUR SERVICES</p>
+            <h2>Travel Services For You</h2>
+            <span>
+                Everything you need for a comfortable journey.
+            </span>
+        </div>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bus"></i></div>
+                <h3>Bus Booking</h3>
+                <p>
+                    Book comfortable buses for
+                    short and long-distance journeys.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bed"></i></div>
+                <h3>2+1 Sleeper Bus</h3>
+                <p>
+                    Comfortable sleeper buses
+                    for overnight journeys.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-taxi"></i></div>
+                <h3>Cab Booking</h3>
+                <p>
+                    Book a cab for local,
+                    one-way and round trips.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-users"></i></div>
+                <h3>Family Tours</h3>
+                <p>
+                    Enjoy memorable trips
+                    with your family.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-heart"></i></div>
+                <h3>Honeymoon Tours</h3>
+                <p>
+                    Special packages for
+                    couples and honeymoon trips.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-plane"></i></div>
+                <h3>Custom Tours</h3>
+                <p>
+                    Create your own travel plan
+                    according to your requirements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="packages-section">
+        <div class="section-heading">
+            <p>TOUR PACKAGES</p>
+            <h2>Popular Packages</h2>
+            <span>
+                Explore some of our most popular travel packages.
+            </span>
+        </div>
+        <div class="package-container">
+            <div class="package-card">
+                <img src="/images/goat.jpg" alt="Goa Tour">
+                <div class="package-content">
+                    <span>3 Days / 2 Nights</span>
+                    <h3>Goa Tour</h3>
+                    <p>
+                        Explore beaches, nightlife and
+                        beautiful places in Goa.
+                    </p>
+                    <div class="package-bottom">
+                        <strong>Starting ₹8,999</strong>
+                        <a href="booking.html?tour=Goa-Holiday-Package&price=2000"> Book Now </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="package-card">
+                <img src="/images/lonavala.jpg" alt="Lonavala Tour">
+                <div class="package-content">
+                    <span>1 Day Trip</span>
+                    <h3>Lonavala</h3>
+                    <p>
+                        Enjoy the beautiful hills,
+                        waterfalls and nature.
+                    </p>
+                    <div class="package-bottom">
+                        <strong>Starting ₹2,999</strong>
+                        <a href="booking.html?tour=Lonavala-One-Day-Trip&price=3000"> Book Now </a>
+                    </div>
+                </div>
+            </div>
+            <div class="package-card">
+                <img src="/images/mahablashwar.jpg" alt="Mahabaleshwar Tour">
+                <div class="package-content">
+                    <span>2 Days / 1 Night</span>
+                    <h3>Mahabaleshwar</h3>
+                    <p>
+                        Discover beautiful viewpoints,
+                        nature and local attractions.
+                    </p>
+                    <div class="package-bottom">
+                        <strong>Starting ₹4,999</strong>
+                        <a href="booking.html?tour=Mahabaleshwar-Family-Tour&price=3500"> Book Now </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="packages.html">
+                View All Packages <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- responsiblity -->
+    <section class="why-section">
+        <div class="why-content">
+            <p>WHY CHOOSE US</p>
+            <h2>
+                Your Journey,<br>
+                Our Responsibility.
+            </h2>
+            <p class="why-text">
+                We focus on providing comfortable,
+                safe and reliable travel services
+                for every customer.
+            </p>
+        </div>
+        <div class="why-points">
+            <div>
+                <h3>01</h3>
+                <h4>Comfortable Travel</h4>
+                <p>
+                    Clean and comfortable vehicles
+                    for your journey.
+                </p>
+            </div>
+            <div>
+                <h3>02</h3>
+                <h4>Experienced Drivers</h4>
+                <p>
+                    Experienced drivers focused
+                    on a safe journey.
+                </p>
+            </div>
+            <div>
+                <h3>03</h3>
+                <h4>Affordable Pricing</h4>
+                <p>
+                    Competitive prices for
+                    different travel requirements.
+                </p>
+            </div>
+            <div>
+                <h3>04</h3>
+                <h4>Easy Booking</h4>
+                <p>
+                    Simple booking and enquiry
+                    process.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--   custom section  -->
+    <section class="custom-section">
+        <div>
+            <p>PLAN YOUR JOURNEY</p>
+            <h2>Can't Find The Right Package?</h2>
+            <p>Tell us where you want to go,
+                when you want to travel and
+                what type of vehicle you need.</p>
+            <a href="custom.html">Create Custom Trip</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>REDDY TOURS & TRAVELS</h2>
+                <p>
+                    Comfortable, safe and affordable
+                    travel for every journey.
+                </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="/HTML/index.html">Home</a>
+                <a href="/html/packages.html">Packages</a>
+                <a href="/HTML/services.html">Services</a>
+                <a href="/HTML/contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h3>Popular</h3>
+                <a href="packages.html" class="punetomumbai">Pune <i class="fa-solid fa-arrow-right"></i> Mumbai</a>
+                <a href="packages.html" class="punetohyd">Pune <i class="fa-solid fa-arrow-right"></i> Hyderabad</a>
+                <a href="packages.html" class="punetochennai">Pune <i class="fa-solid fa-arrow-right"></i> Chennai</a>
+                <a href="packages.html" class="punetodelhi">Pune <i class="fa-solid fa-arrow-right"></i> Delhi</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p> +91 9096991016</p>
+                <p> pranaviltepawar@gmail.com</p>
+                <p> Pune, Maharashtra</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="/js/packages.js"></script>
+<script src="/js/booking.js"></script>
+<script src="/js/show.js"></script>
+
+</html>
