@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+}
+
+/* Profile Card */
+.profile-card {
+    width: 380px;
+    padding: 35px 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+}
+.home-btn {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 7px 14px;
+    text-decoration: none;
+    color: #333;
+    background: #f1f5f9;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: #2563eb;
+    color: white;
+}
+
+
+.profile-icon {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.profile-icon i {
+    font-size: 90px;
+    color: #2563eb;
+}
+
+.profile-card h2 {
+    margin-bottom: 30px;
+    color: #1e293b;
+    font-size: 28px;
+}
+
+.info {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+}
+
+.info label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #64748b;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info p {
+    font-size: 17px;
+    color: #1e293b;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+/* Buttons */
+.logout-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .profile-card {
+        width: 100%;
+
+        padding: 30px 20px;
+    }
+
+    .profile-icon i {
+        font-size: 75px;
+    }
+
+    .profile-card h2 {
+        font-size: 24px;
+    }
+}
