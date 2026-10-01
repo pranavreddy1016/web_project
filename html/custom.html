@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Plan</title>
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+
+     <nav class="navbar">
+        <div class="nav-left">
+            
+            <ul>
+                <li><a href="/HTML/packages.html" class="active">Return</a></li>
+                
+            </div>
+            </div>
+
+    </nav>
+
+    <div class="booking-box">
+        <h1>Tour Booking</h1>
+        <form id="bookingForm">
+            <label>Selected Tour</label>
+            <input type="text" id="tour" placeholder="Enter tour package">
+            <label>Package Price</label>
+            <input type="text" id="price" placeholder="Enter Price">
+            <label>Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label>Mobile Number</label>
+            <input type="tel" id="mobile" placeholder="Enter mobile number" required>
+            <label>Travel Date</label>
+            <input type="date" id="date" required>
+            <label>Number of Persons</label>
+            <input type="number" id="persons" min="1" placeholder="Enter number of persons" required>
+
+            <button type="submit">
+                Submit Booking
+            </button>
+        </form>
+
+    </div>
+
+    
+<script>
+const bookingForm = document.getElementById("bookingForm");
+    bookingForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const tour = document.getElementById("tour").value;
+    const price = document.getElementById("price").value;
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("mobile").value;
+    const date = document.getElementById("date").value;
+    const persons = document.getElementById("persons").value;
+    alert(
+        "Booking Submitted Successfully!\n\n" +
+
+        "Tour: " + tour + "\n" +
+        "Price: ₹" + price + "\n" +
+        "Name: " + name + "\n" +
+        "Mobile: " + mobile + "\n" +
+        "Travel Date: " + date + "\n" +
+        "Persons: " + persons + "\n\n" +
+        "Thank you for booking with Reddy Tours & Travels!"
+    );
+});
+</script>
+</body>
+</html>

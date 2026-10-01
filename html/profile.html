@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | Reddy Tours & Travels</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+
+        <a href="index.html" class="home-btn">
+            <bold>Back</bold>
+        </a>
+
+        <div class="profile-icon">
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+        <h2>My Profile</h2>
+        <div class="info">
+            <label>Name</label>
+            <p id="profileName">Loading...</p>
+        </div>
+        <div class="info">
+            <label>Mobile Number</label>
+            <p id="profileMobile">Loading...</p>
+        </div>
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+        <button class="logout-btn" onclick="edit()">
+            Edit
+        </button>
+
+
+
+    </div>
+    <script>
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        if (isLoggedIn !== "true") {
+            window.location.href = "login.html";
+        }
+        const userName = localStorage.getItem("userName");
+
+        const userMobile = localStorage.getItem("userMobile");
+        
+        document.getElementById("profileName").textContent =
+            userName || "Not Available";
+
+        document.getElementById("profileMobile").textContent =
+            userMobile || "Not Available";
+
+        function logout() {
+            localStorage.removeItem("userName");
+            localStorage.removeItem("userMobile");
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "login.html";
+        }
+
+        function edit() {
+
+            let oldName = localStorage.getItem("userName");
+            let oldPhone = localStorage.getItem("userMobile");
+
+            let newName = prompt("Enter new name:", oldName);
+            let newPhone = prompt("Enter new mobile:", oldPhone);
+
+            localStorage.setItem("userName", newName);
+            localStorage.setItem("userMobile", newPhone);
+
+            document.getElementById("profileName").textContent = newName;
+            document.getElementById("profileMobile").textContent = newPhone;
+
+            alert("Profile updated successfully!");
+        }
+    </script>
+
+</body>
+
+</html>

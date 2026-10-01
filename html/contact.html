@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <a href="#">REDDY TOURS</a>
+            </div>
+            <ul>
+                <li><a href="/HTML/index.html">Home</a></li>
+                <li><a href="/HTML/packages.html">Packages</a></li>
+                <li><a href="/HTML/services.html">Services</a></li>
+                <li><a href="/HTML/contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right-div">
+            <ul>
+                 <li><a href="/HTML/profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>Have any questions? We would love to hear from you.</p>
+
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+91 90969 91016</p>
+                </div>
+
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>pranaviltepawar@gmail.com.com</p>
+                </div>
+
+                <div class="info">
+                    <h3>Address</h3>
+                    <p>Karve Nagar, Pune, Maharashtra, India</p>
+                </div>
+            </div>
+
+
+            <div class="contact-form">
+
+                <h2>Send Us a Message</h2>
+
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" class="name" required>
+                    <input type="email" placeholder="Your Email" class="email" required>
+                    <input type="text" placeholder="Subject" class="text">
+                    <textarea placeholder="Your Message" rows="6" class="textarea"></textarea>
+
+                    <!-- Fixed the id typo from "submi" to "submit" -->
+                    <button type="submit" id="submit">Send Message</button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-about">
+
+                <h2>REDDY TOURS & TRAVELS</h2>
+
+                <p>
+                    Comfortable, safe and affordable
+                    travel for every journey.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="/HTML/index.html">Home</a>
+                <a href="/HTML/packages.html">Packages</a>
+                <a href="/HTML/services.html">Services</a>
+                <a href="/HTML/contact.html">Contact</a>
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Popular</h3>
+
+                <a href="packages.html">Pune → Mumbai</a>
+                <a href="packages.html">Pune → Goa</a>
+                <a href="packages.html">Pune → Nashik</a>
+                <a href="packages.html">Pune → Hyderabad</a>
+                <a href="packages.html">Pune → Chennai</a>
+                <a href="packages.html">Pune → Delhi</a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p> +91 9096991016</p>
+                <p> pranaviltepawar@gmail.com</p>
+                <p> Pune, Maharashtra</p>
+
+            </div>
+
+        </div>
+
+
+
+
+    </footer>
+
+
+    <script>
+        const form = document.getElementById('contactForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        alert("Thank you! Your message has been sent successfully.");
+        form.reset();
+});
+    </script>
+
+</body>
+
+</html>

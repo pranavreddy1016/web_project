@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Reddy Tours & Travels</title>
+
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <div class="login-image">
+            <div class="overlay">
+                <h1>REDDY TOURS</h1>
+                <p>Explore. Travel. Create Memories.</p>
+            </div>
+        </div>
+
+
+        <div class="login-section">
+
+            <div class="login-box">
+
+                <div class="logo">
+                    REDDY TOURS
+                </div>
+
+                <h2>Login</h2>
+
+                <p class="subtitle">
+                    Enter your mobile number to continue
+                </p>
+
+
+                <!-- PHONE SECTION -->
+
+                <div id="phoneSection">
+
+                    <label>Mobile Number</label>
+
+                    <div class="phone-input">
+
+                        <span>+91</span>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            maxlength="10"
+                            placeholder="Enter mobile number"
+                            oninput="checkNumber()"
+                        >
+
+                    </div>
+
+                    <p id="phoneError"></p>
+
+                    <button
+                        class="continue-btn"
+                        id="continueBtn"
+                        onclick="sendOTP()"
+                        disabled>
+
+                        Continue
+
+                    </button>
+
+                </div>
+
+
+                <!-- OTP SECTION -->
+
+                <div id="otpSection" style="display: none;">
+
+                    <p class="otp-text">
+
+                        Enter the OTP sent to
+
+                        <strong id="showPhone"></strong>
+
+                    </p>
+
+
+                    <input
+                        type="text"
+                        id="otp"
+                        maxlength="6"
+                        placeholder="Enter 6 digit OTP"
+                        class="otp-input"
+                    >
+
+<!--
+                    <p class="demo-otp">
+                        Demo OTP:
+                        <strong>123456</strong>
+                    </p>
+-->
+
+
+                    <button
+                        class="continue-btn"
+                        onclick="verifyOTP()">
+
+                        Verify & Continue
+
+                    </button>
+
+
+                    <button
+                        class="back-btn"
+                        onclick="goBack()">
+
+                        Change Number
+
+                    </button>
+
+
+                    <p id="otpError"></p>
+
+                </div>
+
+
+                <!-- NAME SECTION -->
+
+                <div id="nameSection" style="display: none;">
+
+                    <label>Your Name</label>
+
+                    <input
+                        type="text"
+                        id="userName"
+                        class="namebox"
+                        placeholder="Enter your full name"
+                        class="name-input"
+                    >
+
+                    <p id="nameError"></p>
+
+                    <button
+                        class="continue-btn"
+                        onclick="saveUser()">
+
+                        Continue
+
+                    </button>
+
+                </div>
+
+
+                <p class="terms">
+
+                    By continuing, you agree to our
+
+                    <a href="#">Terms & Conditions</a>
+
+                    and
+
+                    <a href="#">Privacy Policy</a>.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="/js/login.js"></script>
+
+</body>
+
+</html>
