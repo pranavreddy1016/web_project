@@ -1,0 +1,701 @@
+*{    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #222;
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.logo a {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.navbar a:hover {
+    color: #00bfff;
+}
+
+.hov{
+    color: #00bfff;
+}
+nav a.active {
+    color: #f7a712;
+    border-bottom: 3px solid #ff9a9e;
+}
+.book-btn {
+    background-color: #00a8ff;
+    padding: 11px 18px;
+    border-radius: 6px;
+}
+.book-btn:hover {
+    background-color: white;
+    color: #000 !important;
+}
+.resultdisplay{
+    display: none;
+}
+.hero {
+    margin-top: 70px;
+    background-color: #f5f7fa;
+    
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.008)
+        ),
+        url("/images/shaniwar-wada.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    padding: 100px 20px 50px;
+    
+    border-bottom: 3px solid black;
+    border-radius: 0 0 10% 10%;
+    
+} 
+/* 
+.hero {
+    min-height: 600px;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+} */
+.hero-content {
+    max-width: 700px;
+    color: white;
+    
+    
+}
+
+
+
+.small-title {
+    font-size: 15px;
+    /* letter-spacing: 33px; */
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: 70px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+
+.hero-text {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+.primary-btn {
+    background-color: #00a8ff;
+    color: white;
+}
+
+
+.secondary-btn {
+    background-color: white;
+    color: #000;
+}
+
+
+.primary-btn:hover {
+    background-color: #0088cc;
+}
+
+
+.secondary-btn:hover {
+    background-color: #ddd;
+}
+
+
+/*  search section*/
+
+
+.search-section {
+    padding: 45px 8%;
+    background-color: #f5f7fa;
+    text-align: center;
+    
+}
+
+
+.search-section h2 {
+    margin-bottom: 25px;
+}
+
+
+.search-box {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 15px;
+    align-items: end;
+}
+
+
+.input-group {
+    flex: 1;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.input-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.search-box button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a8ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.section-heading p {
+    color: #00a8ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-heading span {
+    color: #777;
+}
+
+.resultdisplay {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trip-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.price-tag {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-right: 15px;
+}
+
+.book-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-msg { color: red; font-weight: bold; }
+.no-results { color: #666; font-style: italic; }
+
+
+/* Keep it hidden initially */
+.resultdisplay {
+  display: none; 
+  margin-top: 30px;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 8%;
+}
+
+
+.trip-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.resultdisplay {
+    display: none;
+}
+.resultdisplay {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+/* p routs */
+
+.popular-section {
+    padding: 80px 8%;
+}
+
+.route-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.route-card {
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.route-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.route-image img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+.route-content {
+    padding: 20px;
+}
+
+
+.route-content h3 {
+    margin-bottom: 10px;
+}
+
+
+.route-content p {
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+.route-content a {
+    color: #00a8ff;
+    font-weight: bold;
+}
+
+
+/* services */
+
+.services-section {
+    padding: 80px 8%;
+    background-color: #f5f7fa;
+}
+
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.service-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+    color: #777;
+    line-height: 1.6;
+}
+
+
+/* packages */
+
+.packages-section {
+    padding: 80px 8%;
+}
+
+
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.package-card {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+
+.package-card > img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+
+.package-content {
+    padding: 22px;
+}
+
+
+.package-content > span {
+    color: #00a8ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.package-content h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+
+.package-content p {
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+.package-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.package-bottom a {
+    background-color: #00a8ff;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 5px;
+}
+
+
+.view-all {
+    text-align: center;
+    margin-top: 35px;
+}
+
+
+.view-all a {
+    color: #00a8ff;
+    font-weight: bold;
+}
+.package-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+
+/* why */
+
+.why-section {
+    padding: 80px 8%;
+    background-color: #111;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 70px;
+}
+
+
+.why-content > p:first-child {
+    color: #00a8ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+
+.why-content h2 {
+    font-size: 50px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+
+.why-text {
+    color: #bbb;
+    line-height: 1.7;
+    max-width: 500px;
+}
+
+
+.why-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+
+.why-points h3 {
+    color: #00a8ff;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.why-points h4 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+
+.why-points p {
+    color: #aaa;
+    line-height: 1.5;
+}
+
+
+.custom-section {
+    padding: 90px 8%;
+    text-align: center;
+    background-color: #eaf8ff;
+}
+
+
+.custom-section > div {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.custom-section p:first-child {
+    color: #00a8ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.custom-section h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+
+.custom-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+.custom-section a {
+    display: inline-block;
+    background-color: #00a8ff;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+
+
+footer {
+    background-color: #000;
+    color: white;
+}
+
+
+.footer-container {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+
+.footer-about h2 {
+    margin-bottom: 15px;
+}
+
+
+.footer-about p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.footer-links h3,
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+
+.footer-links a {
+    color: #aaa;
+}
+
+
+.footer-links a:hover {
+    color: #00a8ff;
+}
+
+
+.footer-contact p {
+    color: #aaa;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+
